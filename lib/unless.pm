@@ -45,4 +45,18 @@ no ARGUMENTS to give), you'd better quote C<MODULE> yourselves.
 The current implementation does not allow specification of the
 required version of the module.
 
+=head1 SEE ALSO
+
+L<if> provides the same functionality as this module, without the negation.
+It is also in core (since version C<5.6.2>).
+
+L<Module::Requires> can be used to conditionally load one or modules,
+with constraints based on the version of the module.
+
+L<Module::Load::Conditional> provides a number of functions you can use to
+query what modules are available, and then load one or more of them at runtime.
+
+L<provide> can be used to select one of several possible modules to load,
+based on what version of Perl is running.
+
 =cut
