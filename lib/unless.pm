@@ -4,7 +4,7 @@ package unless;
 
 sub work {
   my $method = shift() ? 'import' : 'unimport';
-  die "Too few arguments to `use unless' (some code returning an empty list in list context?)"
+  die "Too few arguments to 'use unless' (some code returning an empty list in list context?)"
     unless @_ >= 2;
   return if shift;		# CONDITION
 
